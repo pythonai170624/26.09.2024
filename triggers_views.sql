@@ -1,19 +1,4 @@
 -- Trigger
--- function returns value
--- procedure DOES NOT returns value
-CREATE function one() RETURNS integer
-language plpgsql AS
-    $$
-    BEGIN
-        return 1;
-    end;
-$$;
-
-select now();
-
-select one();
-
--- select * from sales;
 
 ---- BLACK BOX
 -- each time a product will be added to an order --> the price*amount will be added to the total
